@@ -14,6 +14,7 @@ class BookSearch(
 
     fun findBooksByTitle(title: String): List<Book> {
         val matchingBooks = existingBooks.filter { it.title.contains(title) }
+        println(matchingBooks)
         return matchingBooks.filter { availability.getStock(it) > 0 }
     }
 }
