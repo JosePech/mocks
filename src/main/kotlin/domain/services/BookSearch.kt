@@ -7,9 +7,9 @@ class BookSearch(
 ) {
     private val existingBooks: List<Book> =
         listOf(
-            Book("The Hobbit"),
-            Book("The Lord of the Rings"),
-            Book("The Silmarillion"),
+            Book("The Hobbit", 10),
+            Book("The Lord of the Rings", 2),
+            Book("The Silmarillion", 0),
         )
 
     fun findBooksByTitle(title: String): List<Book> {
